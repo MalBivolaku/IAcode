@@ -1,6 +1,7 @@
 package com.company;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Desk {
     JFrame f;
@@ -27,7 +28,7 @@ public class Desk {
                 xPos = buttonHeight * (i - 3) + 20;
                 yPos = buttonHeight + 20;
             }
-            if (i>5){
+            if (i>10){
                 yPos = (buttonHeight * 2 ) + 20;
                 xPos = (buttonWidth * (i-6)) + 20;
             }
@@ -44,7 +45,8 @@ public class Desk {
 
         }
         f.setSize(400, 400);
-        f.setLayout(null);
+        f.setLayout(new GridLayout(6 , 5));
+
         f.setVisible(true);
     }
 
