@@ -23,7 +23,7 @@ public class Main {
     public static int askForBoundary() {
         Scanner input = new Scanner(System.in);
         System.out.println("Grade Boundary: ");
-//dik
+
         int boundary = Integer.parseInt(input.nextLine());
         return boundary;
 
