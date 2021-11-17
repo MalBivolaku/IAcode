@@ -17,6 +17,7 @@ public class Desk {
 
 
 
+
         f = new JFrame("Class Layout");
         //create instance of JButton
         b = new JButton[30]; //instantiate array
@@ -39,13 +40,15 @@ public class Desk {
         //add buttons to JFrame
         for (int i = 0; i<30; i++){
             f.add(b[i]);
-
+            f.setBackground(Color.blue);
 
 
 
         }
+
+
         f.setSize(400, 400);
-        f.setLayout(new GridLayout(6 , 5));
+        f.setLayout(new GridLayout(6 , 5 , 20 , 20));
 
         f.setVisible(true);
     }
