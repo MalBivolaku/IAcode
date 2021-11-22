@@ -12,7 +12,7 @@ public class FR {
         try {
 
 
-            FileReader fr = new FileReader("C:/Users/15bivolaku_m/Downloads/IA File - Sheet1.csv");
+            FileReader fr = new FileReader("IA File - Sheet 1.csv");
             BufferedReader br = new BufferedReader(fr);
 
 

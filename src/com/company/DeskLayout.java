@@ -3,14 +3,14 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 
-public class Desk {
+public class DeskLayout {
     JFrame f;
     JButton[] b;
     private int buttonWidth;
     private int buttonHeight;
 
 
-    public Desk(){
+    public DeskLayout(){
         buttonWidth = 50;
         buttonHeight = 30;
 
@@ -51,6 +51,11 @@ public class Desk {
         f.setLayout(new GridLayout(6 , 5 , 20 , 20));
 
         f.setVisible(true);
+    }
+    public void setDeskName(String name , int deskNumber){
+        //set a student name at a given desk
+        b[deskNumber].setText(name);
+
     }
 
 }
