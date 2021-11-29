@@ -14,8 +14,6 @@ public class SeatingPlan {
         this.id = id;
         //assign students desks
         //TODO Option to assign by alphabetically or by grade
-      int temp;
-      boolean sorted = false;
 
 
         for (int i = 0; i< this.students.size(); i++){
@@ -40,13 +38,18 @@ public class SeatingPlan {
         return res;
     }
     public void bubbleSortStudents(){
+        //sort by grade
         boolean sorted = false;
-
+        int j = 0;
         while (!sorted){
             sorted = true;
-            for (int i = 0; i < students.size(); i++){
-                if (students.get)
+            for (int i = 0; i < students.size() - 1 - j; i++){
+                if (students.getStudent(i).grade > students.getStudent(i + 1).grade){
+                    //TODO Swap student i with student i + 1
+                    sorted = false;
+                }
             }
+            j++;
         }
     }
 }

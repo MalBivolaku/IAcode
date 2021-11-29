@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import java.util.Scanner;
 public class Student {
-
+//TODO Make these private and use getters
     public int grade;
     public String name;
 

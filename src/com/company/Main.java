@@ -14,7 +14,7 @@ public class Main {
         System.out.println("PEOPLE WHO HAVE FAILED THE TEST AND REQUIRE FURTHER HELP SESSIONS");
         filterSession.display();
 
-        new SeatingPlan(room, boundary);
+        new SeatingPlan(room, boundary , 0);
 
 
 
