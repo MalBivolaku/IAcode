@@ -46,6 +46,9 @@ public class SeatingPlan {
             for (int i = 0; i < students.size() - 1 - j; i++){
                 if (students.getStudent(i).grade > students.getStudent(i + 1).grade){
                     //TODO Swap student i with student i + 1
+                    Student temp;
+                    temp = students.getStudent(i+1);
+                    students.getStudent(i);
                     sorted = false;
                 }
             }

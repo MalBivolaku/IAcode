@@ -59,4 +59,7 @@ public class TeachingClass {
     public int size(){
         return studentList.size();
     }
+    public void setStudent(int pos , Student studentNewPos){
+        studentList.add(pos , studentNewPos);
+    }
 }
