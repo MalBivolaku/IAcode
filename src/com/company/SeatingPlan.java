@@ -13,7 +13,7 @@ public class SeatingPlan {
         this.desks = new DeskLayout();
         this.id = id;
         //assign students desks
-        //TODO Option to assign by alphabetically or by grade
+
 
 
         for (int i = 0; i< this.students.size(); i++){
@@ -45,7 +45,6 @@ public class SeatingPlan {
             sorted = true;
             for (int i = 0; i < students.size() - 1 - j; i++){
                 if (students.getStudent(i).grade > students.getStudent(i + 1).grade){
-                    //TODO Swap student i with student i + 1
                     Student temp;
                     temp = students.getStudent(i+1);
                     students.getStudent(i);

@@ -54,7 +54,7 @@ public class TeachingClass {
     }
     public Student getStudent(int pos){
         return studentList.get(pos);
-        //TODO Validate pos is in range
+
     }
     public int size(){
         return studentList.size();
