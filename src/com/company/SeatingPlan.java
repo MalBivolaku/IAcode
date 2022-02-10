@@ -7,17 +7,19 @@ public class SeatingPlan {
     private DeskLayout desks;
     private int id;
 
-    public SeatingPlan(TeachingClass students , int boundary , int id){
-        students.setGradeBoundary(boundary);
+    public SeatingPlan(TeachingClass students , int boundary , int id) {
+        this.students = students;
+        this.students.setGradeBoundary(boundary);
         this.students = students.filterByGrade();
-        this.desks = new DeskLayout();
+        this.desks = new DeskLayout(this);
         this.id = id;
+
+    }
+    public void assignPlan(){
         //assign students desks
-
-
-
         for (int i = 0; i< this.students.size(); i++){
             desks.setDeskName(this.students.getStudent(i).name , i);
+
         }
     }
     public TeachingClass getStudents(){

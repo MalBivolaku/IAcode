@@ -6,15 +6,15 @@ public class Main {
 
     public static void main(String[] args) {
         TeachingClass room = new TeachingClass(true, 5);
-        int boundary = askForBoundary();
-        room.setGradeBoundary(boundary);
-        TeachingClass filterSession = room.filterByGrade();
-        room.display();
+       // int boundary = askForBoundary();
+       // room.setGradeBoundary(boundary);
+       // TeachingClass filterSession = room.filterByGrade();
+       // room.display();
 
-        filterSession.display();
+        //filterSession.display();
 
-        new SeatingPlan(room, boundary , 0);
-
+        new SeatingPlan(room, 4 , 0);
+        //new DeskLayout();
 
 
     }
